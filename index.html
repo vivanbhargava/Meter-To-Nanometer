@@ -1,20 +1,20 @@
 <html>
     <head>
-    <title>Centimeter To Nanometer</title>
+    <title>Meter To Micrometer</title>
 </head>
 
 <body style="text-align: center; background: lightgreen; color: blue;">
 
     <p>
-        <label>Centimeter</label>
-            <input id="inputCenti" type="number" placeholder="Centimeter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
+        <label>Meter</label>
+            <input id="inputCenti" type="number" placeholder="Meter" oninput="lengthorDistanceConverter(this.value)" onchange="lengthorDistanceConverter(this.value)">
     </p>
-    <p>Nanometer: <span id="outputnano"></span></p>
+    <p>Micrometer: <span id="outputmicro"></span></p>
 
     <script>
         function lengthorDistanceConverter(valNum) {
             valNum = parseFloat(valNum);
-            document.getElementById("outputnano").innerHTML = valNum * 1e+7;
+            document.getElementById("outputmicro").innerHTML = valNum * 1e+6;
         }
     </script>
 
